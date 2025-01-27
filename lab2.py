@@ -53,6 +53,9 @@ def print_pizza_toppings(about_me):
 
 # TODO: Step 7 - Function that prints comma-separated list of movie genres
 def print_movie_genres(about_me):
+    genres = [movie["genre"] for movie in about_me["movies"]]
+    genre_list =",".join(genres[:-1]) + ", and " + genres[-1] if len(genres) > 1 else genres[0]
+    print(f"I like to watch {genre_list} movies.")
     return 
 
 # TODO: Step 8 - Function that prints comma-separated list of movie titles
