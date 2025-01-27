@@ -32,6 +32,10 @@ def main():
     
 # TODO: Step 4 - Function that prints student name and ID	
 def print_student_name_and_id(about_me):
+    full_name = about_me["full_name"]
+    first_name = full_name.split()[0]
+    print(f"My name is {full_name}, but you can call me sir {first_name}.")
+    print(f"My student ID is {about_me['student_id']}.")
     return
     
 # TODO: Step 5 - Function that adds pizza toppings to data structure
